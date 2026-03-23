@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gertec Recognition</string>
+    <string name="camera_permission_denied">Permissão de câmera negada</string>
+    <string name="open_camera">Abrir Câmera</string>
+    <string name="capture_image">Capturar Imagem</string>
+    <string name="product_not_found">Produto não encontrado</string>
+    <string name="product_details">Detalhes do Produto</string>
+    <string name="model">Modelo</string>
+    <string name="category">Categoria</string>
+    <string name="description">Descrição</string>
+    <string name="price">Preço</string>
+    <string name="specifications">Especificações</string>
+    <string name="features">Características</string>
+    <string name="processor">Processador</string>
+    <string name="memory">Memória</string>
+    <string name="display">Display</string>
+    <string name="connectivity">Conectividade</string>
+    <string name="battery">Bateria</string>
+    <string name="operating_system">Sistema Operacional</string>
+    <string name="back">Voltar</string>
+    <string name="detecting">Detectando...</string>
+    <string name="no_camera_permission">Sem permissão de câmera</string>
+</resources>

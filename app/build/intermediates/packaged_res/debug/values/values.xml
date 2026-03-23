@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFFFFF</color>
+    <color name="error">#B3261E</color>
+    <color name="on_background">#1C1B1F</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="primary">#1F51BA</color>
+    <color name="primary_variant">#1A3A8A</color>
+    <color name="secondary">#FFC107</color>
+    <color name="secondary_variant">#FFA000</color>
+    <color name="surface">#FFFFFF</color>
+    <string name="app_name">Gertec Recognition</string>
+    <string name="back">Voltar</string>
+    <string name="battery">Bateria</string>
+    <string name="camera_permission_denied">Permissão de câmera negada</string>
+    <string name="capture_image">Capturar Imagem</string>
+    <string name="category">Categoria</string>
+    <string name="connectivity">Conectividade</string>
+    <string name="description">Descrição</string>
+    <string name="detecting">Detectando...</string>
+    <string name="display">Display</string>
+    <string name="features">Características</string>
+    <string name="memory">Memória</string>
+    <string name="model">Modelo</string>
+    <string name="no_camera_permission">Sem permissão de câmera</string>
+    <string name="open_camera">Abrir Câmera</string>
+    <string name="operating_system">Sistema Operacional</string>
+    <string name="price">Preço</string>
+    <string name="processor">Processador</string>
+    <string name="product_details">Detalhes do Produto</string>
+    <string name="product_not_found">Produto não encontrado</string>
+    <string name="specifications">Especificações</string>
+    <style name="Theme.GertecRecognition" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="colorOnBackground">@color/on_background</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="colorOnError">@color/on_error</item>
+    </style>
+</resources>
