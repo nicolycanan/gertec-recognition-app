@@ -21,13 +21,7 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final LinearLayout featuresContainer;
-
-  @NonNull
   public final TextView productCategory;
-
-  @NonNull
-  public final TextView productDescription;
 
   @NonNull
   public final TextView productName;
@@ -36,23 +30,15 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
   public final TextView productPrice;
 
   @NonNull
-  public final LinearLayout specificationsContainer;
-
-  @NonNull
   public final Toolbar toolbar;
 
   private ActivityProductDetailsBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout featuresContainer, @NonNull TextView productCategory,
-      @NonNull TextView productDescription, @NonNull TextView productName,
-      @NonNull TextView productPrice, @NonNull LinearLayout specificationsContainer,
-      @NonNull Toolbar toolbar) {
+      @NonNull TextView productCategory, @NonNull TextView productName,
+      @NonNull TextView productPrice, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
-    this.featuresContainer = featuresContainer;
     this.productCategory = productCategory;
-    this.productDescription = productDescription;
     this.productName = productName;
     this.productPrice = productPrice;
-    this.specificationsContainer = specificationsContainer;
     this.toolbar = toolbar;
   }
 
@@ -83,21 +69,9 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.features_container;
-      LinearLayout featuresContainer = ViewBindings.findChildViewById(rootView, id);
-      if (featuresContainer == null) {
-        break missingId;
-      }
-
       id = R.id.product_category;
       TextView productCategory = ViewBindings.findChildViewById(rootView, id);
       if (productCategory == null) {
-        break missingId;
-      }
-
-      id = R.id.product_description;
-      TextView productDescription = ViewBindings.findChildViewById(rootView, id);
-      if (productDescription == null) {
         break missingId;
       }
 
@@ -113,21 +87,14 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.specifications_container;
-      LinearLayout specificationsContainer = ViewBindings.findChildViewById(rootView, id);
-      if (specificationsContainer == null) {
-        break missingId;
-      }
-
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
 
-      return new ActivityProductDetailsBinding((LinearLayout) rootView, featuresContainer,
-          productCategory, productDescription, productName, productPrice, specificationsContainer,
-          toolbar);
+      return new ActivityProductDetailsBinding((LinearLayout) rootView, productCategory,
+          productName, productPrice, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

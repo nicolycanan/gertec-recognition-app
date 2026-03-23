@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.camera.core.Camera;
@@ -17,11 +18,9 @@ import androidx.camera.core.Preview;
 import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.content.ContextCompat;
+
 import com.google.common.util.concurrent.ListenableFuture;
-import com.google.mlkit.vision.common.InputImage;
-import com.google.mlkit.vision.label.ImageLabeling;
-import com.google.mlkit.vision.label.ImageLabeler;
-import com.google.mlkit.vision.label.defaults.ImageLabelerOptions;
+
 import java.io.File;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -34,7 +33,11 @@ public class CameraActivity extends AppCompatActivity {
     private TextView detectionStatus;
     private ImageCapture imageCapture;
     private ProcessCameraProvider cameraProvider;
-    private ImageLabeler imageLabeler;
+
+    // TensorFlow Lite
+    private TFLiteHelper tfliteHelper;
+    private static final String[] LABELS = {"TSG810", "GPOS720", "SK210"}; // 3 classes
+    private static final int NUM_CLASSES = LABELS.length;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +49,13 @@ public class CameraActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_back);
         detectionStatus = findViewById(R.id.detection_status);
 
-        // Initialize ML Kit Image Labeler
-        ImageLabelerOptions options = new ImageLabelerOptions.Builder()
-                .setConfidenceThreshold(0.5f)
-                .build();
-        imageLabeler = ImageLabeling.getClient(options);
+        // Inicializa modelo TFLite
+        try {
+            tfliteHelper = new TFLiteHelper(this, "vww_96_grayscale_quantized.tflite"); // nome do modelo exportado
+        } catch (Exception e) {
+            Log.e(TAG, "Erro ao carregar modelo TFLite: " + e.getMessage());
+            Toast.makeText(this, "Falha ao carregar modelo", Toast.LENGTH_LONG).show();
+        }
 
         btnCapture.setOnClickListener(v -> captureImage());
         btnBack.setOnClickListener(v -> finish());
@@ -67,7 +72,7 @@ public class CameraActivity extends AppCompatActivity {
                 cameraProvider = cameraProviderFuture.get();
                 bindPreview(cameraProvider);
             } catch (ExecutionException | InterruptedException e) {
-                Log.e(TAG, "Error starting camera: " + e.getMessage());
+                Log.e(TAG, "Erro ao iniciar câmera: " + e.getMessage());
             }
         }, getExecutor());
     }
@@ -88,14 +93,12 @@ public class CameraActivity extends AppCompatActivity {
             cameraProvider.unbindAll();
             Camera camera = cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageCapture);
         } catch (Exception e) {
-            Log.e(TAG, "Error binding camera: " + e.getMessage());
+            Log.e(TAG, "Erro ao vincular câmera: " + e.getMessage());
         }
     }
 
     private void captureImage() {
-        if (imageCapture == null) {
-            return;
-        }
+        if (imageCapture == null) return;
 
         File photoFile = new File(getCacheDir(), "captured_image.jpg");
 
@@ -106,13 +109,13 @@ public class CameraActivity extends AppCompatActivity {
                 new ImageCapture.OnImageSavedCallback() {
                     @Override
                     public void onImageSaved(@NonNull ImageCapture.OutputFileResults output) {
-                        Log.d(TAG, "Image captured successfully");
+                        Log.d(TAG, "Imagem capturada com sucesso");
                         processImage(photoFile);
                     }
 
                     @Override
                     public void onError(@NonNull ImageCaptureException exception) {
-                        Log.e(TAG, "Image capture failed: " + exception.getMessage());
+                        Log.e(TAG, "Falha ao capturar imagem: " + exception.getMessage());
                         Toast.makeText(CameraActivity.this, "Erro ao capturar imagem", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -120,47 +123,54 @@ public class CameraActivity extends AppCompatActivity {
 
     private void processImage(File imageFile) {
         try {
+            if (tfliteHelper == null || tfliteHelper.getInterpreter() == null) {
+                Toast.makeText(this, "Modelo não carregado", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             Bitmap bitmap = android.graphics.BitmapFactory.decodeFile(imageFile.getAbsolutePath());
-            // Updated InputImage.fromBitmap to include rotation degree (0)
-            InputImage image = InputImage.fromBitmap(bitmap, 0);
+            Bitmap resized = Bitmap.createScaledBitmap(bitmap, 96, 96, true);
 
-            imageLabeler.process(image)
-                    .addOnSuccessListener(labels -> {
-                        if (labels.isEmpty()) {
-                            detectionStatus.setText("Nenhum produto detectado");
-                            Toast.makeText(CameraActivity.this, "Produto não identificado", Toast.LENGTH_SHORT).show();
-                        } else {
-                            String detectedLabel = labels.get(0).getText();
-                            float confidence = labels.get(0).getConfidence();
-                            Log.d(TAG, "Detected: " + detectedLabel + " (" + confidence + ")");
+            float[][][][] input = new float[1][96][96][1];
+            for (int y = 0; y < 96; y++) {
+                for (int x = 0; x < 96; x++) {
+                    int pixel = resized.getPixel(x, y);
+                    int r = (pixel >> 16) & 0xFF;
+                    int g = (pixel >> 8) & 0xFF;
+                    int b = pixel & 0xFF;
+                    int gray = (r + g + b) / 3;
 
-                            // Try to find product by detected label
-                            Product product = ProductDatabase.getInstance().getProductById(detectedLabel);
+                    input[0][y][x][0] = gray / 255.0f;
+                }
+            }
 
-                            if (product != null) {
-                                Intent intent = new Intent(CameraActivity.this, ProductDetailsActivity.class);
-                                intent.putExtra("product_id", product.getId());
-                                startActivity(intent);
-                            } else {
-                                // Try searching by name
-                                product = ProductDatabase.getInstance().getProductByName(detectedLabel);
-                                if (product != null) {
-                                    Intent intent = new Intent(CameraActivity.this, ProductDetailsActivity.class);
-                                    intent.putExtra("product_id", product.getId());
-                                    startActivity(intent);
-                                } else {
-                                    detectionStatus.setText("Produto não encontrado: " + detectedLabel);
-                                    Toast.makeText(CameraActivity.this, "Produto não encontrado", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        }
-                    })
-                    .addOnFailureListener(e -> {
-                        Log.e(TAG, "Error processing image: " + e.getMessage());
-                        Toast.makeText(CameraActivity.this, "Erro ao processar imagem", Toast.LENGTH_SHORT).show();
-                    });
+            float[][] output = new float[1][NUM_CLASSES];
+            tfliteHelper.getInterpreter().run(input, output);
+
+            int maxIndex = 0;
+            float maxProb = 0;
+            for (int i = 0; i < NUM_CLASSES; i++) {
+                if (output[0][i] > maxProb) {
+                    maxProb = output[0][i];
+                    maxIndex = i;
+                }
+            }
+
+            String detectedLabel = LABELS[maxIndex];
+            Log.d(TAG, "Detectado: " + detectedLabel + " (" + maxProb + ")");
+
+            Product product = ProductDatabase.getInstance().getProductByName(detectedLabel);
+            if (product != null) {
+                Intent intent = new Intent(CameraActivity.this, ProductDetailsActivity.class);
+                intent.putExtra("product_id", product.getId());
+                startActivity(intent);
+            } else {
+                detectionStatus.setText("Produto não encontrado: " + detectedLabel);
+                Toast.makeText(CameraActivity.this, "Produto não encontrado", Toast.LENGTH_SHORT).show();
+            }
+
         } catch (Exception e) {
-            Log.e(TAG, "Error loading image: " + e.getMessage());
+            Log.e(TAG, "Erro ao processar imagem: " + e.getMessage());
         }
     }
 
@@ -171,12 +181,8 @@ public class CameraActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (imageLabeler != null) {
-            try {
-                imageLabeler.close();
-            } catch (Exception e) {
-                Log.e(TAG, "Error closing image labeler: " + e.getMessage());
-            }
+        if (tfliteHelper != null) {
+            tfliteHelper.close();
         }
     }
 }

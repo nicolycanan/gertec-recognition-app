@@ -3242,7 +3242,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
-id features_container
 id fill
 id fillCenter
 id fillEnd
@@ -3407,7 +3406,6 @@ id postLayout
 id pressed
 id preview_view
 id product_category
-id product_description
 id product_name
 id product_price
 id progress_circular
@@ -3476,7 +3474,6 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
-id specifications_container
 id spline
 id split_action_bar
 id spread

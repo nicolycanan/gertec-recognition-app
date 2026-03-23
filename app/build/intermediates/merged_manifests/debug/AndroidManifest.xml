@@ -53,7 +53,8 @@
             android:exported="false" />
         <activity
             android:name="com.gertec.recognition.ProductDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <service
             android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"

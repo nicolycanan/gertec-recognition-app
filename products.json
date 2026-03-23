@@ -232,27 +232,6 @@
       ]
     },
     {
-      "id": "GPOS720",
-      "name": "Terminal PDV GPOS720",
-      "category": "SMART POS",
-      "description": "Terminal de ponto de venda avançado",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 7 polegadas touchscreen",
-        "connectivity": "Ethernet, WiFi, 4G",
-        "battery": "Bateria recarregável",
-        "os": "Android"
-      },
-      "price": "R$ 2.800,00",
-      "features": [
-        "Tela touchscreen",
-        "Múltiplos meios de pagamento",
-        "Conectividade 4G",
-        "Interface intuitiva"
-      ]
-    },
-    {
       "id": "GPOS760",
       "name": "Terminal PDV GPOS760",
       "category": "SMART POS",

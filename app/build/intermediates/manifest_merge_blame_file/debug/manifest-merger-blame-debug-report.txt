@@ -89,159 +89,161 @@
 53            android:exported="false" />
 53-->D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:32:13-37
 54        <activity
-54-->D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:34:9-36:40
+54-->D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:34:9-37:72
 55            android:name="com.gertec.recognition.ProductDetailsActivity"
 55-->D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:35:13-51
-56            android:exported="false" />
+56            android:exported="false"
 56-->D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:36:13-37
-57
-58        <service
-58-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:11:9-17:19
-59            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-59-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:12:13-91
-60            android:directBootAware="true"
-60-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:17:13-43
-61            android:exported="false" >
-61-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:13:13-37
-62            <meta-data
-62-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:14:13-16:85
-63                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
-63-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:15:17-136
-64                android:value="com.google.firebase.components.ComponentRegistrar" />
-64-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:16:17-82
-65            <meta-data
-65-->[com.google.mlkit:object-detection-custom:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\7746c45f061ac1225d1488471845b36b\transformed\jetified-object-detection-custom-17.0.2\AndroidManifest.xml:11:13-13:85
-66                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
-66-->[com.google.mlkit:object-detection-custom:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\7746c45f061ac1225d1488471845b36b\transformed\jetified-object-detection-custom-17.0.2\AndroidManifest.xml:12:17-133
-67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[com.google.mlkit:object-detection-custom:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\7746c45f061ac1225d1488471845b36b\transformed\jetified-object-detection-custom-17.0.2\AndroidManifest.xml:13:17-82
-68            <meta-data
-68-->[com.google.mlkit:image-labeling:17.0.9] C:\Users\nmiranda\.gradle\caches\transforms-3\42f4df221030998af3b3487d7b269499\transformed\jetified-image-labeling-17.0.9\AndroidManifest.xml:11:13-13:85
-69                android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar"
-69-->[com.google.mlkit:image-labeling:17.0.9] C:\Users\nmiranda\.gradle\caches\transforms-3\42f4df221030998af3b3487d7b269499\transformed\jetified-image-labeling-17.0.9\AndroidManifest.xml:12:17-132
-70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.mlkit:image-labeling:17.0.9] C:\Users\nmiranda\.gradle\caches\transforms-3\42f4df221030998af3b3487d7b269499\transformed\jetified-image-labeling-17.0.9\AndroidManifest.xml:13:17-82
-71            <meta-data
-71-->[com.google.mlkit:vision-internal-vkp:18.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\1a7170515b53c213ac827f5b49abcaaa\transformed\jetified-vision-internal-vkp-18.2.3\AndroidManifest.xml:14:13-16:85
-72                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
-72-->[com.google.mlkit:vision-internal-vkp:18.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\1a7170515b53c213ac827f5b49abcaaa\transformed\jetified-vision-internal-vkp-18.2.3\AndroidManifest.xml:15:17-103
-73                android:value="com.google.firebase.components.ComponentRegistrar" />
-73-->[com.google.mlkit:vision-internal-vkp:18.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\1a7170515b53c213ac827f5b49abcaaa\transformed\jetified-vision-internal-vkp-18.2.3\AndroidManifest.xml:16:17-82
-74            <meta-data
-74-->[com.google.mlkit:vision-common:17.3.0] C:\Users\nmiranda\.gradle\caches\transforms-3\6ba5491c879086d835ad2613ab5ab9b3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
-75                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-75-->[com.google.mlkit:vision-common:17.3.0] C:\Users\nmiranda\.gradle\caches\transforms-3\6ba5491c879086d835ad2613ab5ab9b3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
-76                android:value="com.google.firebase.components.ComponentRegistrar" />
-76-->[com.google.mlkit:vision-common:17.3.0] C:\Users\nmiranda\.gradle\caches\transforms-3\6ba5491c879086d835ad2613ab5ab9b3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
-77            <meta-data
-77-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:20:13-22:85
-78                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-78-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:21:17-120
-79                android:value="com.google.firebase.components.ComponentRegistrar" />
-79-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:22:17-82
-80        </service>
-81
-82        <provider
-82-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:9:9-13:38
-83            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-83-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:10:13-78
-84            android:authorities="com.gertec.recognition.mlkitinitprovider"
-84-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:11:13-69
-85            android:exported="false"
-85-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:12:13-37
-86            android:initOrder="99" />
-86-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:13:13-35
-87
-88        <uses-library
-88-->[androidx.camera:camera-extensions:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\fb1d18d70d29f80c1a72cea7c52a135a\transformed\jetified-camera-extensions-1.2.3\AndroidManifest.xml:29:9-31:40
-89            android:name="androidx.camera.extensions.impl"
-89-->[androidx.camera:camera-extensions:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\fb1d18d70d29f80c1a72cea7c52a135a\transformed\jetified-camera-extensions-1.2.3\AndroidManifest.xml:30:13-59
-90            android:required="false" />
-90-->[androidx.camera:camera-extensions:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\fb1d18d70d29f80c1a72cea7c52a135a\transformed\jetified-camera-extensions-1.2.3\AndroidManifest.xml:31:13-37
-91
-92        <service
-92-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:24:9-33:19
-93            android:name="androidx.camera.core.impl.MetadataHolderService"
-93-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:25:13-75
-94            android:enabled="false"
-94-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:26:13-36
-95            android:exported="false" >
-95-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:27:13-37
-96            <meta-data
-96-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:30:13-32:89
-97                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-97-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:31:17-103
-98                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-98-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:32:17-86
-99        </service>
-100
-101        <activity
-101-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
-102            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-102-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
-103            android:exported="false"
-103-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
-104            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-104-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
-105
-106        <meta-data
-106-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nmiranda\.gradle\caches\transforms-3\d238e5f7c8e3cc1fab3a5de86b0666ce\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
-107            android:name="com.google.android.gms.version"
-107-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nmiranda\.gradle\caches\transforms-3\d238e5f7c8e3cc1fab3a5de86b0666ce\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
-108            android:value="@integer/google_play_services_version" />
-108-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nmiranda\.gradle\caches\transforms-3\d238e5f7c8e3cc1fab3a5de86b0666ce\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
-109
-110        <provider
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-111            android:name="androidx.startup.InitializationProvider"
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-112            android:authorities="com.gertec.recognition.androidx-startup"
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-113            android:exported="false" >
-113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-114            <meta-data
-114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-115                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-116                android:value="androidx.startup" />
-116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-117            <meta-data
-117-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nmiranda\.gradle\caches\transforms-3\a4c8d0ec904ebc7ffc6031b8d3671ae8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-118                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-118-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nmiranda\.gradle\caches\transforms-3\a4c8d0ec904ebc7ffc6031b8d3671ae8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-119                android:value="androidx.startup" />
-119-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nmiranda\.gradle\caches\transforms-3\a4c8d0ec904ebc7ffc6031b8d3671ae8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-120        </provider>
-121
-122        <service
-122-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-123            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-124            android:exported="false" >
-124-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-125            <meta-data
-125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-126                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-127                android:value="cct" />
-127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-128        </service>
-129        <service
-129-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-130            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-130-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-131            android:exported="false"
-131-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-132            android:permission="android.permission.BIND_JOB_SERVICE" >
-132-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-133        </service>
-134
-135        <receiver
-135-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-136            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-136-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-137            android:exported="false" />
-137-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-138    </application>
-139
-140</manifest>
+57            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+57-->D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:37:13-69
+58
+59        <service
+59-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:11:9-17:19
+60            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+60-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:12:13-91
+61            android:directBootAware="true"
+61-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:17:13-43
+62            android:exported="false" >
+62-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:13:13-37
+63            <meta-data
+63-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:14:13-16:85
+64                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.defaults.internal.DefaultObjectsRegistrar"
+64-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:15:17-136
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.mlkit:object-detection:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\23b3023e7aadd57ddb0e6c393d0b4e4b\transformed\jetified-object-detection-17.0.2\AndroidManifest.xml:16:17-82
+66            <meta-data
+66-->[com.google.mlkit:object-detection-custom:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\7746c45f061ac1225d1488471845b36b\transformed\jetified-object-detection-custom-17.0.2\AndroidManifest.xml:11:13-13:85
+67                android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar"
+67-->[com.google.mlkit:object-detection-custom:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\7746c45f061ac1225d1488471845b36b\transformed\jetified-object-detection-custom-17.0.2\AndroidManifest.xml:12:17-133
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.mlkit:object-detection-custom:17.0.2] C:\Users\nmiranda\.gradle\caches\transforms-3\7746c45f061ac1225d1488471845b36b\transformed\jetified-object-detection-custom-17.0.2\AndroidManifest.xml:13:17-82
+69            <meta-data
+69-->[com.google.mlkit:image-labeling:17.0.9] C:\Users\nmiranda\.gradle\caches\transforms-3\42f4df221030998af3b3487d7b269499\transformed\jetified-image-labeling-17.0.9\AndroidManifest.xml:11:13-13:85
+70                android:name="com.google.firebase.components:com.google.mlkit.vision.label.defaults.internal.BundledLabelRegistrar"
+70-->[com.google.mlkit:image-labeling:17.0.9] C:\Users\nmiranda\.gradle\caches\transforms-3\42f4df221030998af3b3487d7b269499\transformed\jetified-image-labeling-17.0.9\AndroidManifest.xml:12:17-132
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.mlkit:image-labeling:17.0.9] C:\Users\nmiranda\.gradle\caches\transforms-3\42f4df221030998af3b3487d7b269499\transformed\jetified-image-labeling-17.0.9\AndroidManifest.xml:13:17-82
+72            <meta-data
+72-->[com.google.mlkit:vision-internal-vkp:18.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\1a7170515b53c213ac827f5b49abcaaa\transformed\jetified-vision-internal-vkp-18.2.3\AndroidManifest.xml:14:13-16:85
+73                android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar"
+73-->[com.google.mlkit:vision-internal-vkp:18.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\1a7170515b53c213ac827f5b49abcaaa\transformed\jetified-vision-internal-vkp-18.2.3\AndroidManifest.xml:15:17-103
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.mlkit:vision-internal-vkp:18.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\1a7170515b53c213ac827f5b49abcaaa\transformed\jetified-vision-internal-vkp-18.2.3\AndroidManifest.xml:16:17-82
+75            <meta-data
+75-->[com.google.mlkit:vision-common:17.3.0] C:\Users\nmiranda\.gradle\caches\transforms-3\6ba5491c879086d835ad2613ab5ab9b3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:12:13-14:85
+76                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+76-->[com.google.mlkit:vision-common:17.3.0] C:\Users\nmiranda\.gradle\caches\transforms-3\6ba5491c879086d835ad2613ab5ab9b3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:13:17-124
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.mlkit:vision-common:17.3.0] C:\Users\nmiranda\.gradle\caches\transforms-3\6ba5491c879086d835ad2613ab5ab9b3\transformed\jetified-vision-common-17.3.0\AndroidManifest.xml:14:17-82
+78            <meta-data
+78-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:20:13-22:85
+79                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+79-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:21:17-120
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:22:17-82
+81        </service>
+82
+83        <provider
+83-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:9:9-13:38
+84            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+84-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:10:13-78
+85            android:authorities="com.gertec.recognition.mlkitinitprovider"
+85-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:11:13-69
+86            android:exported="false"
+86-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:12:13-37
+87            android:initOrder="99" />
+87-->[com.google.mlkit:common:18.11.0] C:\Users\nmiranda\.gradle\caches\transforms-3\2bda4313f8f49ab7bc027b023a42e0de\transformed\jetified-common-18.11.0\AndroidManifest.xml:13:13-35
+88
+89        <uses-library
+89-->[androidx.camera:camera-extensions:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\fb1d18d70d29f80c1a72cea7c52a135a\transformed\jetified-camera-extensions-1.2.3\AndroidManifest.xml:29:9-31:40
+90            android:name="androidx.camera.extensions.impl"
+90-->[androidx.camera:camera-extensions:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\fb1d18d70d29f80c1a72cea7c52a135a\transformed\jetified-camera-extensions-1.2.3\AndroidManifest.xml:30:13-59
+91            android:required="false" />
+91-->[androidx.camera:camera-extensions:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\fb1d18d70d29f80c1a72cea7c52a135a\transformed\jetified-camera-extensions-1.2.3\AndroidManifest.xml:31:13-37
+92
+93        <service
+93-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:24:9-33:19
+94            android:name="androidx.camera.core.impl.MetadataHolderService"
+94-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:25:13-75
+95            android:enabled="false"
+95-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:26:13-36
+96            android:exported="false" >
+96-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:27:13-37
+97            <meta-data
+97-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:30:13-32:89
+98                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+98-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:31:17-103
+99                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+99-->[androidx.camera:camera-camera2:1.2.3] C:\Users\nmiranda\.gradle\caches\transforms-3\3104fe5ce3de1bc77c16ebeb30b3f595\transformed\jetified-camera-camera2-1.2.3\AndroidManifest.xml:32:17-86
+100        </service>
+101
+102        <activity
+102-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+103            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+103-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+104            android:exported="false"
+104-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+105-->[com.google.android.gms:play-services-base:18.5.0] C:\Users\nmiranda\.gradle\caches\transforms-3\eaa00e8bd8e071dee07361d175a6c193\transformed\jetified-play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+106
+107        <meta-data
+107-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nmiranda\.gradle\caches\transforms-3\d238e5f7c8e3cc1fab3a5de86b0666ce\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+108            android:name="com.google.android.gms.version"
+108-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nmiranda\.gradle\caches\transforms-3\d238e5f7c8e3cc1fab3a5de86b0666ce\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+109            android:value="@integer/google_play_services_version" />
+109-->[com.google.android.gms:play-services-basement:18.4.0] C:\Users\nmiranda\.gradle\caches\transforms-3\d238e5f7c8e3cc1fab3a5de86b0666ce\transformed\jetified-play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+110
+111        <provider
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+112            android:name="androidx.startup.InitializationProvider"
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+113            android:authorities="com.gertec.recognition.androidx-startup"
+113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+114            android:exported="false" >
+114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+115            <meta-data
+115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+116                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+117                android:value="androidx.startup" />
+117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\nmiranda\.gradle\caches\transforms-3\4ef2d37eca9ad04b2c397a091ea18fe4\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+118            <meta-data
+118-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nmiranda\.gradle\caches\transforms-3\a4c8d0ec904ebc7ffc6031b8d3671ae8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+119                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+119-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nmiranda\.gradle\caches\transforms-3\a4c8d0ec904ebc7ffc6031b8d3671ae8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+120                android:value="androidx.startup" />
+120-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\nmiranda\.gradle\caches\transforms-3\a4c8d0ec904ebc7ffc6031b8d3671ae8\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+121        </provider>
+122
+123        <service
+123-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+124            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+124-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+125            android:exported="false" >
+125-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+126            <meta-data
+126-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+127                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+127-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+128                android:value="cct" />
+128-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\nmiranda\.gradle\caches\transforms-3\280b134b17be4a9959f33adf6cc752b5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+129        </service>
+130        <service
+130-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+131            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+131-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+132            android:exported="false"
+132-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+133            android:permission="android.permission.BIND_JOB_SERVICE" >
+133-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+134        </service>
+135
+136        <receiver
+136-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+137            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+137-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+138            android:exported="false" />
+138-->[com.google.android.datatransport:transport-runtime:2.2.6] C:\Users\nmiranda\.gradle\caches\transforms-3\ad4be27abe5bfeb212a2ecc9561bf522\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+139    </application>
+140
+141</manifest>

@@ -212,9 +212,11 @@ ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\
 	android:name
 		ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:31:13-43
 activity#com.gertec.recognition.ProductDetailsActivity
-ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:34:9-36:40
+ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:34:9-37:72
 	android:exported
 		ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:36:13-37
+	android:theme
+		ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:37:13-69
 	android:name
 		ADDED from D:\projetos-nicoly\projetos-android\testes eu\gertec-recognition-app\app\src\main\AndroidManifest.xml:35:13-51
 uses-sdk

@@ -3,8 +3,10 @@ package com.gertec.recognition;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import java.util.Map;
 
 public class ProductDetailsActivity extends AppCompatActivity {
@@ -16,28 +18,28 @@ public class ProductDetailsActivity extends AppCompatActivity {
     private LinearLayout featuresContainer;
     private Toolbar toolbar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
 
-        productName = findViewById(R.id.product_name);
-        productCategory = findViewById(R.id.product_category);
-        productPrice = findViewById(R.id.product_price);
-        productDescription = findViewById(R.id.product_description);
-        specificationsContainer = findViewById(R.id.specifications_container);
-        featuresContainer = findViewById(R.id.features_container);
-        toolbar = findViewById(R.id.toolbar);
-
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+
+        TextView nameView = findViewById(R.id.product_name);
+        TextView categoryView = findViewById(R.id.product_category);
+        TextView priceView = findViewById(R.id.product_price);
 
         String productId = getIntent().getStringExtra("product_id");
-        if (productId != null) {
-            displayProduct(productId);
+        Product product = ProductDatabase.getInstance().getProductById(productId);
+
+        if (product != null) {
+            nameView.setText(product.getName());
+            categoryView.setText(product.getCategory());
+            priceView.setText("R$ " + product.getPrice());
         }
+
     }
 
     private void displayProduct(String productId) {

@@ -18,14 +18,11 @@ id btn_capture
 id btn_open_camera
 id btn_product_list
 id detection_status
-id features_container
 id logo
 id preview_view
 id product_category
-id product_description
 id product_name
 id product_price
-id specifications_container
 id toolbar
 layout activity_camera
 layout activity_main
