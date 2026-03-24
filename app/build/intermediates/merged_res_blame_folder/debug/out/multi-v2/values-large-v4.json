@@ -1,6 +1,7 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "com.gertec.recognition.app-mergeDebugResources-38:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
@@ -22,6 +23,31 @@
                 },
                 {
                     "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\ad73316c71c5740a50ef96e52ed10188\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
+=======
+            "outputFile": "com.gertec.recognition.app-mergeDebugResources-33:/values-large-v4/values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\d8ce04165440defe0f6779526ab3e21b\\transformed\\material-1.9.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,177,311,752",
+                        "endLines": "2,3,9,15",
+                        "endColumns": "121,133,10,10",
+                        "endOffsets": "172,306,747,1190"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,19",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "752,874,1008,1449",
+                        "endLines": "11,12,18,24",
+                        "endColumns": "121,133,10,10",
+                        "endOffsets": "869,1003,1444,1887"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\3c3e8d87979f80077854f6234c4ddaef\\transformed\\appcompat-1.6.1\\res\\values-large-v4\\values-large-v4.xml",
+>>>>>>> 092c94a (Primeiro commit do projeto)
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

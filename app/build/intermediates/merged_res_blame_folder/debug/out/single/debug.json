@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\nmiranda\\.gradle\\daemon\\8.2\\com.gertec.recognition.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\nmiranda\\.gradle\\daemon\\8.2\\com.gertec.recognition.app-main-42:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -38,5 +39,29 @@
     {
         "merged": "C:\\Users\\nmiranda\\.gradle\\daemon\\8.2\\com.gertec.recognition.app-merged_res-40:\\mipmap-mdpi_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\nmiranda\\.gradle\\daemon\\8.2\\com.gertec.recognition.app-main-42:\\mipmap-mdpi\\ic_launcher_round.xml"
+=======
+        "merged": "com.gertec.recognition.app-merged_res-35:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.gertec.recognition.app-main-37:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.gertec.recognition.app-merged_res-35:/drawable_ic_camera.xml.flat",
+        "source": "com.gertec.recognition.app-main-37:/drawable/ic_camera.xml"
+    },
+    {
+        "merged": "com.gertec.recognition.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.gertec.recognition.app-main-37:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.gertec.recognition.app-merged_res-35:/layout_activity_main.xml.flat",
+        "source": "com.gertec.recognition.app-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.gertec.recognition.app-merged_res-35:/layout_activity_camera.xml.flat",
+        "source": "com.gertec.recognition.app-main-37:/layout/activity_camera.xml"
+    },
+    {
+        "merged": "com.gertec.recognition.app-merged_res-35:/layout_activity_product_details.xml.flat",
+        "source": "com.gertec.recognition.app-main-37:/layout/activity_product_details.xml"
+>>>>>>> 092c94a (Primeiro commit do projeto)
     }
 ]

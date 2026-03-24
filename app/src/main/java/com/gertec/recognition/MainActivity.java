@@ -5,12 +5,18 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+<<<<<<< HEAD
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.gertec.recognition.uitls.ProductDatabase;
+=======
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+>>>>>>> 092c94a (Primeiro commit do projeto)
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,7 +53,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openProductList() {
+<<<<<<< HEAD
         startActivity(new Intent(this, ProductListActivity.class));
+=======
+        // TODO: Implement product list activity
+>>>>>>> 092c94a (Primeiro commit do projeto)
     }
 
     @Override
