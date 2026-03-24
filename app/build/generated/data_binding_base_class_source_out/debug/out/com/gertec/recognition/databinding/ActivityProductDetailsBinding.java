@@ -4,11 +4,11 @@ package com.gertec.recognition.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.gertec.recognition.R;
@@ -18,33 +18,46 @@ import java.lang.String;
 
 public final class ActivityProductDetailsBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
-  public final TextView productCategory;
+  public final Button btnBack;
 
   @NonNull
-  public final TextView productName;
+  public final TextView txtCategory;
 
   @NonNull
-  public final TextView productPrice;
+  public final TextView txtDescription;
 
   @NonNull
-  public final Toolbar toolbar;
+  public final TextView txtFeatures;
 
-  private ActivityProductDetailsBinding(@NonNull LinearLayout rootView,
-      @NonNull TextView productCategory, @NonNull TextView productName,
-      @NonNull TextView productPrice, @NonNull Toolbar toolbar) {
+  @NonNull
+  public final TextView txtName;
+
+  @NonNull
+  public final TextView txtPrice;
+
+  @NonNull
+  public final TextView txtSpecifications;
+
+  private ActivityProductDetailsBinding(@NonNull ScrollView rootView, @NonNull Button btnBack,
+      @NonNull TextView txtCategory, @NonNull TextView txtDescription,
+      @NonNull TextView txtFeatures, @NonNull TextView txtName, @NonNull TextView txtPrice,
+      @NonNull TextView txtSpecifications) {
     this.rootView = rootView;
-    this.productCategory = productCategory;
-    this.productName = productName;
-    this.productPrice = productPrice;
-    this.toolbar = toolbar;
+    this.btnBack = btnBack;
+    this.txtCategory = txtCategory;
+    this.txtDescription = txtDescription;
+    this.txtFeatures = txtFeatures;
+    this.txtName = txtName;
+    this.txtPrice = txtPrice;
+    this.txtSpecifications = txtSpecifications;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -69,32 +82,50 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.product_category;
-      TextView productCategory = ViewBindings.findChildViewById(rootView, id);
-      if (productCategory == null) {
+      id = R.id.btn_back;
+      Button btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
         break missingId;
       }
 
-      id = R.id.product_name;
-      TextView productName = ViewBindings.findChildViewById(rootView, id);
-      if (productName == null) {
+      id = R.id.txt_category;
+      TextView txtCategory = ViewBindings.findChildViewById(rootView, id);
+      if (txtCategory == null) {
         break missingId;
       }
 
-      id = R.id.product_price;
-      TextView productPrice = ViewBindings.findChildViewById(rootView, id);
-      if (productPrice == null) {
+      id = R.id.txt_description;
+      TextView txtDescription = ViewBindings.findChildViewById(rootView, id);
+      if (txtDescription == null) {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
+      id = R.id.txt_features;
+      TextView txtFeatures = ViewBindings.findChildViewById(rootView, id);
+      if (txtFeatures == null) {
         break missingId;
       }
 
-      return new ActivityProductDetailsBinding((LinearLayout) rootView, productCategory,
-          productName, productPrice, toolbar);
+      id = R.id.txt_name;
+      TextView txtName = ViewBindings.findChildViewById(rootView, id);
+      if (txtName == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_price;
+      TextView txtPrice = ViewBindings.findChildViewById(rootView, id);
+      if (txtPrice == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_specifications;
+      TextView txtSpecifications = ViewBindings.findChildViewById(rootView, id);
+      if (txtSpecifications == null) {
+        break missingId;
+      }
+
+      return new ActivityProductDetailsBinding((ScrollView) rootView, btnBack, txtCategory,
+          txtDescription, txtFeatures, txtName, txtPrice, txtSpecifications);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

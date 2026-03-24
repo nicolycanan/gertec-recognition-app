@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.gertec.recognition.app-mergeDebugResources-33:/values-port/values-port.xml",
+            "outputFile": "com.gertec.recognition.app-mergeDebugResources-38:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\3c3e8d87979f80077854f6234c4ddaef\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\ad73316c71c5740a50ef96e52ed10188\\transformed\\appcompat-1.7.0\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

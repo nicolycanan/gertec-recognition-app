@@ -2,6 +2,7 @@ package com.gertec.recognition;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -19,9 +20,13 @@ import androidx.camera.lifecycle.ProcessCameraProvider;
 import androidx.camera.view.PreviewView;
 import androidx.core.content.ContextCompat;
 
+import com.gertec.recognition.uitls.ProductDatabase;
+import com.gertec.recognition.utils.Product;
+import com.gertec.recognition.utils.TFLiteHelper;
 import com.google.common.util.concurrent.ListenableFuture;
 
 import java.io.File;
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 
@@ -34,10 +39,7 @@ public class CameraActivity extends AppCompatActivity {
     private ImageCapture imageCapture;
     private ProcessCameraProvider cameraProvider;
 
-    // TensorFlow Lite
     private TFLiteHelper tfliteHelper;
-    private static final String[] LABELS = {"TSG810", "GPOS720", "SK210"}; // 3 classes
-    private static final int NUM_CLASSES = LABELS.length;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +51,9 @@ public class CameraActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_back);
         detectionStatus = findViewById(R.id.detection_status);
 
-        // Inicializa modelo TFLite
         try {
-            tfliteHelper = new TFLiteHelper(this, "vww_96_grayscale_quantized.tflite"); // nome do modelo exportado
+            // Construtor com dois parâmetros (contexto + nome do modelo)
+            tfliteHelper = new TFLiteHelper(this, "product_model.tflite");
         } catch (Exception e) {
             Log.e(TAG, "Erro ao carregar modelo TFLite: " + e.getMessage());
             Toast.makeText(this, "Falha ao carregar modelo", Toast.LENGTH_LONG).show();
@@ -123,43 +125,37 @@ public class CameraActivity extends AppCompatActivity {
 
     private void processImage(File imageFile) {
         try {
-            if (tfliteHelper == null || tfliteHelper.getInterpreter() == null) {
+            if (tfliteHelper == null) {
                 Toast.makeText(this, "Modelo não carregado", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            Bitmap bitmap = android.graphics.BitmapFactory.decodeFile(imageFile.getAbsolutePath());
-            Bitmap resized = Bitmap.createScaledBitmap(bitmap, 96, 96, true);
+            Bitmap bitmap = BitmapFactory.decodeFile(imageFile.getAbsolutePath());
+            String detectedLabel = tfliteHelper.recognizeImage(bitmap);   // ✅ precisa existir no TFLiteHelper
 
-            float[][][][] input = new float[1][96][96][1];
-            for (int y = 0; y < 96; y++) {
-                for (int x = 0; x < 96; x++) {
-                    int pixel = resized.getPixel(x, y);
-                    int r = (pixel >> 16) & 0xFF;
-                    int g = (pixel >> 8) & 0xFF;
-                    int b = pixel & 0xFF;
-                    int gray = (r + g + b) / 3;
+            if (detectedLabel.endsWith("_preprocessed")) {
+                detectedLabel = detectedLabel.replace("_preprocessed", "");
+            }
 
-                    input[0][y][x][0] = gray / 255.0f;
+            Log.d(TAG, "Detectado: " + detectedLabel);
+
+            Product product = ProductDatabase.getInstance().getProductById(detectedLabel);
+
+            if (product == null) {
+                List<String> labels = TFLiteHelper.loadLabels(this, "labels.txt");  // ✅ precisa existir no TFLiteHelper
+                if (labels.contains(detectedLabel)) {
+                    product = new Product(
+                            detectedLabel,
+                            detectedLabel,
+                            "Reconhecido",
+                            0.0,
+                            "Produto reconhecido pelo modelo",
+                            "Informações não cadastradas",
+                            "Sem detalhes adicionais"
+                    );
                 }
             }
 
-            float[][] output = new float[1][NUM_CLASSES];
-            tfliteHelper.getInterpreter().run(input, output);
-
-            int maxIndex = 0;
-            float maxProb = 0;
-            for (int i = 0; i < NUM_CLASSES; i++) {
-                if (output[0][i] > maxProb) {
-                    maxProb = output[0][i];
-                    maxIndex = i;
-                }
-            }
-
-            String detectedLabel = LABELS[maxIndex];
-            Log.d(TAG, "Detectado: " + detectedLabel + " (" + maxProb + ")");
-
-            Product product = ProductDatabase.getInstance().getProductByName(detectedLabel);
             if (product != null) {
                 Intent intent = new Intent(CameraActivity.this, ProductDetailsActivity.class);
                 intent.putExtra("product_id", product.getId());
@@ -182,7 +178,7 @@ public class CameraActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         if (tfliteHelper != null) {
-            tfliteHelper.close();
+            tfliteHelper.close();   // ✅ precisa existir no TFLiteHelper
         }
     }
 }

@@ -1,36 +1,78 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        app:title="Detalhes do Produto"
-        app:titleTextColor="@android:color/white"/>
-
-    <TextView
-        android:id="@+id/product_name"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome do Produto"
-        android:textSize="20sp"
-        android:padding="16dp"/>
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/product_category"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Categoria"
-        android:padding="16dp"/>
+        <!-- Nome do produto -->
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Produto"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="12dp" />
 
-    <TextView
-        android:id="@+id/product_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Preço"
-        android:padding="16dp"/>
-</LinearLayout>
+        <!-- Categoria -->
+        <TextView
+            android:id="@+id/txt_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Categoria"
+            android:textSize="18sp"
+            android:paddingBottom="8dp" />
+
+        <!-- Preço -->
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preço"
+            android:textSize="18sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Descrição -->
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Especificações -->
+        <TextView
+            android:id="@+id/txt_specifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Especificações"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Recursos -->
+        <TextView
+            android:id="@+id/txt_features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recursos"
+            android:textSize="16sp"
+            android:paddingBottom="20dp" />
+
+        <!-- Botão voltar -->
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
