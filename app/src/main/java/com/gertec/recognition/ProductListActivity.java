@@ -6,7 +6,8 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.gertec.recognition.uitls.ProductDatabase;
+import com.gertec.recognition.utils.Product;
+import com.gertec.recognition.utils.ProductDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,11 +24,11 @@ public class ProductListActivity extends AppCompatActivity {
         listViewProducts = findViewById(R.id.list_view_products);
 
         // Carrega todos os produtos do banco
-        List<com.gertec.recognition.utils.Product> products = ProductDatabase.getInstance().getAllProducts();
+        List<Product> products = ProductDatabase.getInstance().getAllProducts();
 
         // Monta uma lista de strings com ID + Nome
         List<String> productNames = new ArrayList<>();
-        for (com.gertec.recognition.utils.Product p : products) {
+        for (Product p : products) {
             productNames.add(p.getId());
         }
 

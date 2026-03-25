@@ -5,11 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-<<<<<<< HEAD
         android:minSdkVersion="24"
-=======
-        android:minSdkVersion="31"
->>>>>>> 092c94a (Primeiro commit do projeto)
         android:targetSdkVersion="34" />
 
     <uses-permission android:name="android.permission.CAMERA" />
@@ -44,12 +40,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.GertecRecognition" >
         <activity
-<<<<<<< HEAD
             android:name="com.gertec.recognition.ProductListActivity"
             android:exported="false" />
         <activity
-=======
->>>>>>> 092c94a (Primeiro commit do projeto)
             android:name="com.gertec.recognition.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -63,7 +56,6 @@
             android:exported="false" />
         <activity
             android:name="com.gertec.recognition.ProductDetailsActivity"
-<<<<<<< HEAD
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
@@ -79,10 +71,6 @@
                 android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
                 android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
         </service>
-=======
-            android:exported="false" />
-
->>>>>>> 092c94a (Primeiro commit do projeto)
         <service
             android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
             android:directBootAware="true"
@@ -113,22 +101,6 @@
             android:exported="false"
             android:initOrder="99" />
 
-<<<<<<< HEAD
-=======
-        <uses-library
-            android:name="androidx.camera.extensions.impl"
-            android:required="false" />
-
-        <service
-            android:name="androidx.camera.core.impl.MetadataHolderService"
-            android:enabled="false"
-            android:exported="false" >
-            <meta-data
-                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
-                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
-        </service>
-
->>>>>>> 092c94a (Primeiro commit do projeto)
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
@@ -148,7 +120,6 @@
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
-<<<<<<< HEAD
             <meta-data
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
@@ -174,10 +145,6 @@
             </intent-filter>
         </receiver>
 
-=======
-        </provider>
-
->>>>>>> 092c94a (Primeiro commit do projeto)
         <service
             android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
             android:exported="false" >

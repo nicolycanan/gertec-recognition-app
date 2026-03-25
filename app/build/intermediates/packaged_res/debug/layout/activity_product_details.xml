@@ -1,83 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <!-- Nome do produto -->
-        <TextView
-            android:id="@+id/txt_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Nome do Produto"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:paddingBottom="12dp" />
-
-        <!-- Categoria -->
-        <TextView
-            android:id="@+id/txt_category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Categoria"
-            android:textSize="18sp"
-            android:paddingBottom="8dp" />
-
-        <!-- Preço -->
-        <TextView
-            android:id="@+id/txt_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Preço"
-            android:textSize="18sp"
-            android:paddingBottom="12dp" />
-
-        <!-- Descrição -->
-        <TextView
-            android:id="@+id/txt_description"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Descrição"
-            android:textSize="16sp"
-            android:paddingBottom="12dp" />
-
-        <!-- Especificações -->
-        <TextView
-            android:id="@+id/txt_specifications"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Especificações"
-            android:textSize="16sp"
-            android:paddingBottom="12dp" />
-
-        <!-- Recursos -->
-        <TextView
-            android:id="@+id/txt_features"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Recursos"
-            android:textSize="16sp"
-            android:paddingBottom="20dp" />
-
-        <!-- Botão voltar -->
-        <Button
-            android:id="@+id/btn_back"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Voltar"
-            android:backgroundTint="@color/design_default_color_primary"
-            android:textColor="@android:color/white"
-            android:padding="12dp" />
-
-    </LinearLayout>
-</ScrollView>
-=======
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -103,7 +24,7 @@
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/product_name"
+                android:id="@+id/txt_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
@@ -112,76 +33,64 @@
                 android:layout_marginBottom="8dp" />
 
             <TextView
-                android:id="@+id/product_category"
+                android:id="@+id/txt_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:textColor="@color/secondary"
-                android:layout_marginBottom="16dp" />
-
-            <TextView
-                android:id="@+id/product_price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/secondary"
-                android:layout_marginBottom="16dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/description"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="@color/primary"
-                android:layout_marginTop="16dp"
+                android:textColor="@color/secondary_variant"
                 android:layout_marginBottom="8dp" />
 
             <TextView
-                android:id="@+id/product_description"
+                android:id="@+id/txt_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:textColor="@color/on_background"
                 android:layout_marginBottom="16dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/specifications"
-                android:textSize="16sp"
+                android:text="@string/description"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/primary"
-                android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp" />
 
-            <LinearLayout
-                android:id="@+id/specifications_container"
+            <TextView
+                android:id="@+id/txt_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" />
+                android:textSize="16sp"
+                android:textColor="@color/on_background"
+                android:layout_marginBottom="16dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/features"
-                android:textSize="16sp"
+                android:text="Detalhes"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/primary"
-                android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp" />
 
-            <LinearLayout
-                android:id="@+id/features_container"
+            <TextView
+                android:id="@+id/txt_details"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:textSize="16sp"
+                android:textColor="@color/on_background"
                 android:layout_marginBottom="24dp" />
 
+            <Button
+                android:id="@+id/btn_back_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:backgroundTint="@color/primary"
+                android:textColor="@color/on_primary" />
+
         </LinearLayout>
-
     </ScrollView>
-
 </LinearLayout>
->>>>>>> 092c94a (Primeiro commit do projeto)

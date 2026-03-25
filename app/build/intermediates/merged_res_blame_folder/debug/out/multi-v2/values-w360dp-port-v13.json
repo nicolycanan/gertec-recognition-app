@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.gertec.recognition.app-mergeDebugResources-38:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\6e87900d1996ad07f288fcf6031a8962\\transformed\\material-1.12.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
-=======
-            "outputFile": "com.gertec.recognition.app-mergeDebugResources-33:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\d8ce04165440defe0f6779526ab3e21b\\transformed\\material-1.9.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
->>>>>>> 092c94a (Primeiro commit do projeto)
+                    "source": "C:\\Users\\nicol\\.gradle\\caches\\transforms-4\\3d440e95dc588604250cf863b1c9b2d4\\transformed\\material-1.12.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

@@ -17,47 +17,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GertecRecognition">
-<<<<<<< HEAD
+
         <activity
             android:name=".ProductListActivity"
             android:exported="false" />
-=======
 
->>>>>>> 092c94a (Primeiro commit do projeto)
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-<<<<<<< HEAD
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".CameraActivity"
             android:exported="false" />
+
         <activity
             android:name=".ProductDetailsActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-    </application>
-
-</manifest>
-=======
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".CameraActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".ProductDetailsActivity"
-            android:exported="false" />
 
     </application>
 
 </manifest>
->>>>>>> 092c94a (Primeiro commit do projeto)

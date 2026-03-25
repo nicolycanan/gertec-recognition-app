@@ -1,634 +1,10 @@
 {
   "products": [
     {
-<<<<<<< HEAD
-      "id": "TSG810",
-      "name": "TSG810",
-      "category": "Utensils",
-      "price": 12.50
-    },
-    {
-      "id": "SK210",
-      "name": "SK210",
-      "category": "Electronics",
-      "price": 3500.00
-    }
-  ]
-}
-=======
-      "id": "PPC930",
-      "name": "PIN Pad PPC930 USB",
-      "category": "PIN PAD",
-      "description": "Terminal de pagamento compacto com tela LCD",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "512MB RAM",
-        "display": "Tela LCD 2.4 polegadas",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 764,85",
-      "features": [
-        "Reconhecimento de cartões magnéticos",
-        "Teclado numérico",
-        "Conexão USB e Serial",
-        "Suporte a múltiplas operadoras"
-      ]
-    },
-    {
-      "id": "PPC940",
-      "name": "PIN Pad PPC940 USB",
-      "category": "PIN PAD",
-      "description": "Terminal de pagamento com tela touchscreen",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "512MB RAM",
-        "display": "Tela Touchscreen 2.4 polegadas",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 764,85",
-      "features": [
-        "Tela touchscreen",
-        "Reconhecimento de cartões magnéticos",
-        "Conexão USB e Serial",
-        "Interface amigável"
-      ]
-    },
-    {
-      "id": "SK210",
-      "name": "Totem de Autoatendimento Smart SK210",
-      "category": "TERMINAL SMART",
-      "description": "Totem completo para cartórios e consultas",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 10 polegadas",
-        "connectivity": "Ethernet, WiFi",
-        "battery": "Não aplicável",
-        "os": "Android"
-      },
-      "price": "R$ 3.500,00",
-      "features": [
-        "Múltiplos serviços",
-        "Facilidades de integração",
-        "Eficiência total",
-        "Tela grande e responsiva"
-      ]
-    },
-    {
-      "id": "SK210_NFC",
-      "name": "Totem de Autoatendimento Smart SK210 NFC",
-      "category": "TERMINAL SMART",
-      "description": "Totem com suporte a NFC para cartórios",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 10 polegadas",
-        "connectivity": "Ethernet, WiFi, NFC",
-        "battery": "Não aplicável",
-        "os": "Android"
-      },
-      "price": "R$ 4.402,20",
-      "features": [
-        "Suporte a NFC",
-        "Múltiplos serviços",
-        "Integração com sistemas",
-        "Tela grande e responsiva"
-      ]
-    },
-    {
-      "id": "SK210_LITE",
-      "name": "Totem de Autoatendimento Smart SK210 LITE",
-      "category": "TERMINAL SMART",
-      "description": "Versão lite do totem SK210",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "2GB RAM",
-        "display": "Tela 7 polegadas",
-        "connectivity": "Ethernet, WiFi",
-        "battery": "Não aplicável",
-        "os": "Android"
-      },
-      "price": "R$ 2.500,00",
-      "features": [
-        "Versão compacta",
-        "Múltiplos serviços",
-        "Eficiência",
-        "Tela responsiva"
-      ]
-    },
-    {
-      "id": "BP_G2_E",
-      "name": "Balança Eletrônica BP G2 E",
-      "category": "IMPRESSORA TÉRMICA",
-      "description": "Balança com impressora integrada",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Display LED",
-        "connectivity": "Serial, USB",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 1.200,00",
-      "features": [
-        "Impressora térmica integrada",
-        "Precisão de pesagem",
-        "Etiquetagem automática",
-        "Conexão com sistemas"
-      ]
-    },
-    {
-      "id": "BP_G2_E_2D",
-      "name": "Balança Eletrônica BP G2 E 2D",
-      "category": "IMPRESSORA TÉRMICA",
-      "description": "Balança com leitor 2D integrado",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Display LED",
-        "connectivity": "Serial, USB",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 1.500,00",
-      "features": [
-        "Leitor 2D integrado",
-        "Impressora térmica",
-        "Precisão de pesagem",
-        "Etiquetagem automática"
-      ]
-    },
-    {
-      "id": "TC506_E_2D",
-      "name": "Terminal de Consulta TC506 E 2D",
-      "category": "TERMINAL DE CONSULTA",
-      "description": "Terminal de consulta com leitor 2D",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "2GB RAM",
-        "display": "Tela 7 polegadas",
-        "connectivity": "Ethernet, WiFi",
-        "battery": "Não aplicável",
-        "os": "Android"
-      },
-      "price": "R$ 1.681,32",
-      "features": [
-        "Leitor 2D integrado",
-        "Tela responsiva",
-        "Conexão com sistemas",
-        "Interface amigável"
-      ]
-    },
-    {
-      "id": "GBOT",
-      "name": "Robô GBOT",
-      "category": "ROBÓTICA",
-      "description": "Robô para automação de processos",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 5 polegadas",
-        "connectivity": "Ethernet, WiFi, Bluetooth",
-        "battery": "Bateria recarregável",
-        "os": "Android"
-      },
-      "price": "R$ 5.000,00",
-      "features": [
-        "Automação de processos",
-        "Mobilidade",
-        "Integração com sistemas",
-        "Bateria de longa duração"
-      ]
-    },
-    {
-      "id": "MP15",
-      "name": "Coletor de Dados MP15",
-      "category": "COLETOR DE DADOS",
-      "description": "Coletor móvel para coleta de dados",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 4 polegadas",
-        "connectivity": "Ethernet, WiFi, Bluetooth",
-        "battery": "Bateria de 4000mAh",
-        "os": "Android"
-      },
-      "price": "R$ 2.000,00",
-      "features": [
-        "Coleta de dados em tempo real",
-        "Leitor de código de barras",
-        "Bateria de longa duração",
-        "Resistente a quedas"
-      ]
-    },
-    {
-      "id": "GPOS700X",
-      "name": "Terminal PDV GPOS700X",
-      "category": "SMART POS",
-      "description": "Terminal de ponto de venda completo",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 7 polegadas",
-        "connectivity": "Ethernet, WiFi, 4G",
-        "battery": "Bateria recarregável",
-        "os": "Android"
-      },
-      "price": "R$ 2.500,00",
-      "features": [
-        "Terminal PDV completo",
-        "Múltiplos meios de pagamento",
-        "Conectividade 4G",
-        "Bateria de longa duração"
-      ]
-    },
-    {
-      "id": "GPOS720",
-      "name": "Terminal PDV GPOS720",
-      "category": "SMART POS",
-      "description": "Terminal de ponto de venda avançado",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 7 polegadas touchscreen",
-        "connectivity": "Ethernet, WiFi, 4G",
-        "battery": "Bateria recarregável",
-        "os": "Android"
-      },
-      "price": "R$ 2.800,00",
-      "features": [
-        "Tela touchscreen",
-        "Múltiplos meios de pagamento",
-        "Conectividade 4G",
-        "Interface intuitiva"
-      ]
-    },
-    {
-      "id": "GPOS760",
-      "name": "Terminal PDV GPOS760",
-      "category": "SMART POS",
-      "description": "Terminal de ponto de venda premium",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 7 polegadas touchscreen",
-        "connectivity": "Ethernet, WiFi, 4G, NFC",
-        "battery": "Bateria recarregável",
-        "os": "Android"
-      },
-      "price": "R$ 3.200,00",
-      "features": [
-        "Tela touchscreen",
-        "Suporte a NFC",
-        "Múltiplos meios de pagamento",
-        "Conectividade 4G"
-      ]
-    },
-    {
-      "id": "GPOS780",
-      "name": "Terminal PDV GPOS780",
-      "category": "SMART POS",
-      "description": "Terminal de ponto de venda topo de linha",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 8 polegadas touchscreen",
-        "connectivity": "Ethernet, WiFi, 4G, NFC",
-        "battery": "Bateria recarregável",
-        "os": "Android"
-      },
-      "price": "R$ 3.800,00",
-      "features": [
-        "Tela grande touchscreen",
-        "Suporte a NFC",
-        "Múltiplos meios de pagamento",
-        "Conectividade 4G"
-      ]
-    },
-    {
-      "id": "TSG810",
-      "name": "Terminal Smart TSG810",
-      "category": "TERMINAL SMART",
-      "description": "Terminal inteligente para estacionamento",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 7 polegadas",
-        "connectivity": "Ethernet, WiFi, 4G",
-        "battery": "Não aplicável",
-        "os": "Android"
-      },
-      "price": "R$ 1.500,00",
-      "features": [
-        "Controle inteligente",
-        "Automação completa",
-        "Múltiplos serviços",
-        "Integração com sistemas"
-      ]
-    },
-    {
-      "id": "TSG820",
-      "name": "Terminal Smart TSG820",
-      "category": "TERMINAL SMART",
-      "description": "Terminal inteligente avançado para estacionamento",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "4GB RAM",
-        "display": "Tela 7 polegadas touchscreen",
-        "connectivity": "Ethernet, WiFi, 4G",
-        "battery": "Não aplicável",
-        "os": "Android"
-      },
-      "price": "R$ 1.149,00",
-      "features": [
-        "Tela touchscreen",
-        "Controle inteligente",
-        "Automação completa",
-        "Interface moderna"
-      ]
-    },
-    {
-      "id": "GS300",
-      "name": "Gaveta de Segurança GS300",
-      "category": "ACESSÓRIOS",
-      "description": "Gaveta de segurança para equipamentos",
-      "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "Serial",
-        "battery": "Não aplicável",
-        "os": "Não aplicável"
-      },
-      "price": "R$ 500,00",
-      "features": [
-        "Segurança de dinheiro",
-        "Conexão com terminais",
-        "Trancamento automático",
-        "Construção robusta"
-      ]
-    },
-    {
-      "id": "G250",
-      "name": "Impressora Térmica G250",
-      "category": "IMPRESSORA TÉRMICA",
-      "description": "Impressora térmica para recibos",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Não aplicável",
-        "connectivity": "Serial, USB, Ethernet",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 800,00",
-      "features": [
-        "Impressão térmica de alta qualidade",
-        "Velocidade de impressão rápida",
-        "Múltiplas conectividades",
-        "Construção durável"
-      ]
-    },
-    {
-      "id": "G250W",
-      "name": "Impressora Térmica G250W",
-      "category": "IMPRESSORA TÉRMICA",
-      "description": "Impressora térmica com WiFi",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Não aplicável",
-        "connectivity": "Serial, USB, Ethernet, WiFi",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 950,00",
-      "features": [
-        "Impressão térmica de alta qualidade",
-        "Conectividade WiFi",
-        "Velocidade de impressão rápida",
-        "Construção durável"
-      ]
-    },
-    {
-      "id": "MT721",
-      "name": "Teclado PDV MT721",
-      "category": "TECLADO PDV",
-      "description": "Teclado programável para PDV",
-      "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Não aplicável"
-      },
-      "price": "R$ 300,00",
-      "features": [
-        "Teclas programáveis",
-        "Resistente a líquidos",
-        "Conexão USB e Serial",
-        "Design ergonômico"
-      ]
-    },
-    {
-      "id": "SAT_3_0",
-      "name": "SAT 3.0",
-      "category": "SAT",
-      "description": "Sistema Autenticador e Transmissor de Cupom Fiscal",
-      "specifications": {
-        "processor": "Qualcomm Snapdragon",
-        "memory": "2GB RAM",
-        "display": "Tela 3.5 polegadas",
-        "connectivity": "Ethernet, WiFi",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 1.200,00",
-      "features": [
-        "Autenticação de cupom fiscal",
-        "Transmissão segura",
-        "Conformidade fiscal",
-        "Integração com PDV"
-      ]
-    },
-    {
-      "id": "MFE_LITE",
-      "name": "MFe Lite",
-      "category": "MFE",
-      "description": "Módulo Fiscal Eletrônico Lite",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Não aplicável",
-        "connectivity": "Serial, USB",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 800,00",
-      "features": [
-        "Emissão de NFC-e",
-        "Conformidade fiscal",
-        "Integração com PDV",
-        "Construção compacta"
-      ]
-    },
-    {
-      "id": "TEC12_E",
-      "name": "Teclado TEC-12-E",
-      "category": "TECLADO PDV",
-      "description": "Teclado numérico para PDV",
-      "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Não aplicável"
-      },
-      "price": "R$ 250,00",
-      "features": [
-        "12 teclas numéricas",
-        "Resistente a líquidos",
-        "Conexão USB e Serial",
-        "Design compacto"
-      ]
-    },
-    {
-      "id": "TEC12_E_BUMPBAR",
-      "name": "Teclado TEC-12-E Bumpbar",
-      "category": "TECLADO PDV",
-      "description": "Teclado com barra de acionamento",
-      "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Não aplicável"
-      },
-      "price": "R$ 350,00",
-      "features": [
-        "Barra de acionamento",
-        "Resistente a líquidos",
-        "Conexão USB e Serial",
-        "Design ergonômico"
-      ]
-    },
-    {
-      "id": "TEC44",
-      "name": "Teclado TEC44",
-      "category": "TECLADO PDV",
-      "description": "Teclado programável 44 teclas",
-      "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Não aplicável"
-      },
-      "price": "R$ 400,00",
-      "features": [
-        "44 teclas programáveis",
-        "Resistente a líquidos",
-        "Conexão USB e Serial",
-        "Design profissional"
-      ]
-    },
-    {
-      "id": "TEC44_DIS",
-      "name": "Teclado TEC44 DIS",
-      "category": "TECLADO PDV",
-      "description": "Teclado com display integrado",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Display LED 2 linhas",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 550,00",
-      "features": [
-        "44 teclas programáveis",
-        "Display integrado",
-        "Resistente a líquidos",
-        "Conexão USB e Serial"
-      ]
-    },
-    {
-      "id": "TEC55",
-      "name": "Teclado TEC55",
-      "category": "TECLADO PDV",
-      "description": "Teclado programável 55 teclas",
-      "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Não aplicável"
-      },
-      "price": "R$ 450,00",
-      "features": [
-        "55 teclas programáveis",
-        "Resistente a líquidos",
-        "Conexão USB e Serial",
-        "Design profissional"
-      ]
-    },
-    {
-      "id": "TEC55_DIS",
-      "name": "Teclado TEC55 DIS",
-      "category": "TECLADO PDV",
-      "description": "Teclado com display integrado 55 teclas",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Display LED 2 linhas",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 600,00",
-      "features": [
-        "55 teclas programáveis",
-        "Display integrado",
-        "Resistente a líquidos",
-        "Conexão USB e Serial"
-      ]
-    },
-    {
-      "id": "TEC65_DIS",
-      "name": "Teclado TEC65 DIS",
-      "category": "TECLADO PDV",
-      "description": "Teclado com display integrado 65 teclas",
-      "specifications": {
-        "processor": "Processador embarcado",
-        "memory": "256MB",
-        "display": "Display LED 2 linhas",
-        "connectivity": "USB, Serial",
-        "battery": "Não aplicável",
-        "os": "Linux Embarcado"
-      },
-      "price": "R$ 700,00",
-      "features": [
-        "65 teclas programáveis",
-        "Display integrado",
-        "Resistente a líquidos",
-        "Conexão USB e Serial"
-      ]
-    },
-    {
       "id": "EPASS",
-      "name": "Chave de Segurança ePass",
+      "name": "FIDO ePass",
       "category": "CHAVE DE SEGURANÇA",
-      "description": "Chave de segurança para autenticação",
+      "description": "Chave de segurança para autenticação.",
       "specifications": {
         "processor": "Não aplicável",
         "memory": "Não aplicável",
@@ -647,9 +23,9 @@
     },
     {
       "id": "EPASS_C_NFC",
-      "name": "Chave de Segurança ePass C NFC",
+      "name": "FIDO ePass NFC",
       "category": "CHAVE DE SEGURANÇA",
-      "description": "Chave de segurança com NFC",
+      "description": "Chave de segurança com NFC.",
       "specifications": {
         "processor": "Não aplicável",
         "memory": "Não aplicável",
@@ -667,47 +43,205 @@
       ]
     },
     {
-      "id": "EPASS_C_BIO",
-      "name": "Chave de Segurança ePass C Bio",
-      "category": "CHAVE DE SEGURANÇA",
-      "description": "Chave de segurança com biometria",
+      "id": "TSG820",
+      "name": "Terminal Smart TSG820",
+      "category": "TERMINAL SMART",
+      "description": "Terminal inteligente avançado para estacionamento.",
       "specifications": {
-        "processor": "Não aplicável",
-        "memory": "Não aplicável",
-        "display": "Não aplicável",
-        "connectivity": "USB",
-        "battery": "Bateria recarregável",
-        "os": "Não aplicável"
+        "processor": "Qualcomm Snapdragon",
+        "memory": "4GB RAM",
+        "display": "Tela 7 polegadas touchscreen",
+        "connectivity": "Ethernet, WiFi, 4G",
+        "battery": "Não aplicável",
+        "os": "Android"
       },
-      "price": "R$ 1.605,50",
+      "price": "R$ 1.149,00",
       "features": [
-        "Autenticação biométrica",
-        "Segurança de alto nível",
-        "Compatibilidade universal",
-        "Design premium"
+        "Tela touchscreen",
+        "Controle inteligente",
+        "Automação completa",
+        "Interface moderna"
       ]
     },
     {
-      "id": "GPOS790",
-      "name": "Terminal PDV GPOS790",
+      "id": "BP_G2_E_2D",
+      "name": "BPG2 2D",
+      "category": "IMPRESSORA TÉRMICA",
+      "description": "Balança com leitor 2D integrado.",
+      "specifications": {
+        "processor": "Processador embarcado",
+        "memory": "256MB",
+        "display": "Display LED",
+        "connectivity": "Serial, USB",
+        "battery": "Não aplicável",
+        "os": "Linux Embarcado"
+      },
+      "price": "R$ 1.500,00",
+      "features": [
+        "Leitor 2D integrado",
+        "Impressora térmica",
+        "Precisão de pesagem",
+        "Etiquetagem automática"
+      ]
+    },
+    {
+      "id": "TC506_E_2D",
+      "name": "TC506 2D",
+      "category": "TERMINAL DE CONSULTA",
+      "description": "Terminal de consulta com leitor 2D.",
+      "specifications": {
+        "processor": "Qualcomm Snapdragon",
+        "memory": "2GB RAM",
+        "display": "Tela 7 polegadas",
+        "connectivity": "Ethernet, WiFi",
+        "battery": "Não aplicável",
+        "os": "Android"
+      },
+      "price": "R$ 1.681,32",
+      "features": [
+        "Leitor 2D integrado",
+        "Tela responsiva",
+        "Conexão com sistemas",
+        "Interface amigável"
+      ]
+    },
+    {
+      "id": "GT300",
+      "name": "GT300",
+      "category": "Não informado",
+      "description": "Informações não encontradas no arquivo enviado.",
+      "specifications": {
+        "processor": "Não informado",
+        "memory": "Não informado",
+        "display": "Não informado",
+        "connectivity": "Não informado",
+        "battery": "Não informado",
+        "os": "Não informado"
+      },
+      "price": "Não informado",
+      "features": [
+        "Informações não encontradas no arquivo enviado"
+      ]
+    },
+    {
+      "id": "G250W",
+      "name": "Impressora Térmica G250W",
+      "category": "IMPRESSORA TÉRMICA",
+      "description": "Impressora térmica com WiFi.",
+      "specifications": {
+        "processor": "Processador embarcado",
+        "memory": "256MB",
+        "display": "Não aplicável",
+        "connectivity": "Serial, USB, Ethernet, WiFi",
+        "battery": "Não aplicável",
+        "os": "Linux Embarcado"
+      },
+      "price": "R$ 950,00",
+      "features": [
+        "Impressão térmica de alta qualidade",
+        "Conectividade WiFi",
+        "Velocidade de impressão rápida",
+        "Construção durável"
+      ]
+    },
+    {
+      "id": "SK100",
+      "name": "SK100",
+      "category": "Não informado",
+      "description": "Informações não encontradas no arquivo enviado.",
+      "specifications": {
+        "processor": "Não informado",
+        "memory": "Não informado",
+        "display": "Não informado",
+        "connectivity": "Não informado",
+        "battery": "Não informado",
+        "os": "Não informado"
+      },
+      "price": "Não informado",
+      "features": [
+        "Informações não encontradas no arquivo enviado"
+      ]
+    },
+    {
+      "id": "PPC940",
+      "name": "PIN Pad PPC940 USB",
+      "category": "PIN PAD",
+      "description": "Terminal de pagamento com tela touchscreen.",
+      "specifications": {
+        "processor": "Qualcomm Snapdragon",
+        "memory": "512MB RAM",
+        "display": "Tela Touchscreen 2.4 polegadas",
+        "connectivity": "USB, Serial",
+        "battery": "Não aplicável",
+        "os": "Linux Embarcado"
+      },
+      "price": "R$ 764,85",
+      "features": [
+        "Tela touchscreen",
+        "Reconhecimento de cartões magnéticos",
+        "Conexão USB e Serial",
+        "Interface amigável"
+      ]
+    },
+    {
+      "id": "GPOS780",
+      "name": "Terminal PDV GPOS780",
       "category": "SMART POS",
-      "description": "Terminal de ponto de venda ultra premium",
+      "description": "Terminal de ponto de venda topo de linha.",
       "specifications": {
         "processor": "Qualcomm Snapdragon",
         "memory": "4GB RAM",
         "display": "Tela 8 polegadas touchscreen",
-        "connectivity": "Ethernet, WiFi, 4G, NFC, Bluetooth",
+        "connectivity": "Ethernet, WiFi, 4G, NFC",
         "battery": "Bateria recarregável",
         "os": "Android"
       },
-      "price": "R$ 4.200,00",
+      "price": "R$ 3.800,00",
       "features": [
         "Tela grande touchscreen",
-        "Suporte a NFC e Bluetooth",
+        "Suporte a NFC",
         "Múltiplos meios de pagamento",
         "Conectividade 4G"
+      ]
+    },
+    {
+      "id": "GPOS720",
+      "name": "Terminal PDV GPOS720",
+      "category": "SMART POS",
+      "description": "Terminal de ponto de venda avançado.",
+      "specifications": {
+        "processor": "Qualcomm Snapdragon",
+        "memory": "4GB RAM",
+        "display": "Tela 7 polegadas touchscreen",
+        "connectivity": "Ethernet, WiFi, 4G",
+        "battery": "Bateria recarregável",
+        "os": "Android"
+      },
+      "price": "R$ 2.800,00",
+      "features": [
+        "Tela touchscreen",
+        "Múltiplos meios de pagamento",
+        "Conectividade 4G",
+        "Interface intuitiva"
+      ]
+    },
+    {
+      "id": "MP35P",
+      "name": "MP35P",
+      "category": "Não informado",
+      "description": "Informações não encontradas no arquivo enviado.",
+      "specifications": {
+        "processor": "Não informado",
+        "memory": "Não informado",
+        "display": "Não informado",
+        "connectivity": "Não informado",
+        "battery": "Não informado",
+        "os": "Não informado"
+      },
+      "price": "Não informado",
+      "features": [
+        "Informações não encontradas no arquivo enviado"
       ]
     }
   ]
 }
->>>>>>> 092c94a (Primeiro commit do projeto)

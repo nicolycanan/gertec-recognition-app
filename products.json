@@ -232,8 +232,6 @@
       ]
     },
     {
-<<<<<<< HEAD
-=======
       "id": "GPOS720",
       "name": "Terminal PDV GPOS720",
       "category": "SMART POS",
@@ -255,7 +253,6 @@
       ]
     },
     {
->>>>>>> 092c94a (Primeiro commit do projeto)
       "id": "GPOS760",
       "name": "Terminal PDV GPOS760",
       "category": "SMART POS",

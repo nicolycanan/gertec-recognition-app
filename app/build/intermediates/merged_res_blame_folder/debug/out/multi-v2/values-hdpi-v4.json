@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "com.gertec.recognition.app-mergeDebugResources-38:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\ad73316c71c5740a50ef96e52ed10188\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-=======
-            "outputFile": "com.gertec.recognition.app-mergeDebugResources-33:/values-hdpi-v4/values-hdpi-v4.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\nmiranda\\.gradle\\caches\\transforms-3\\3c3e8d87979f80077854f6234c4ddaef\\transformed\\appcompat-1.6.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
->>>>>>> 092c94a (Primeiro commit do projeto)
+                    "source": "C:\\Users\\nicol\\.gradle\\caches\\transforms-4\\e37d2341650e435ee29e7d79aec291b8\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

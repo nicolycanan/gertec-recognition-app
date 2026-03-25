@@ -4,19 +4,12 @@ package com.gertec.recognition.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 import android.widget.Button;
-import android.widget.ScrollView;
-import android.widget.TextView;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-=======
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
->>>>>>> 092c94a (Primeiro commit do projeto)
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.gertec.recognition.R;
@@ -26,11 +19,13 @@ import java.lang.String;
 
 public final class ActivityProductDetailsBinding implements ViewBinding {
   @NonNull
-<<<<<<< HEAD
-  private final ScrollView rootView;
+  private final LinearLayout rootView;
 
   @NonNull
-  public final Button btnBack;
+  public final Button btnBackDetails;
+
+  @NonNull
+  public final Toolbar toolbar;
 
   @NonNull
   public final TextView txtCategory;
@@ -39,7 +34,7 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
   public final TextView txtDescription;
 
   @NonNull
-  public final TextView txtFeatures;
+  public final TextView txtDetails;
 
   @NonNull
   public final TextView txtName;
@@ -47,68 +42,23 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
   @NonNull
   public final TextView txtPrice;
 
-  @NonNull
-  public final TextView txtSpecifications;
-
-  private ActivityProductDetailsBinding(@NonNull ScrollView rootView, @NonNull Button btnBack,
-      @NonNull TextView txtCategory, @NonNull TextView txtDescription,
-      @NonNull TextView txtFeatures, @NonNull TextView txtName, @NonNull TextView txtPrice,
-      @NonNull TextView txtSpecifications) {
+  private ActivityProductDetailsBinding(@NonNull LinearLayout rootView,
+      @NonNull Button btnBackDetails, @NonNull Toolbar toolbar, @NonNull TextView txtCategory,
+      @NonNull TextView txtDescription, @NonNull TextView txtDetails, @NonNull TextView txtName,
+      @NonNull TextView txtPrice) {
     this.rootView = rootView;
-    this.btnBack = btnBack;
+    this.btnBackDetails = btnBackDetails;
+    this.toolbar = toolbar;
     this.txtCategory = txtCategory;
     this.txtDescription = txtDescription;
-    this.txtFeatures = txtFeatures;
+    this.txtDetails = txtDetails;
     this.txtName = txtName;
     this.txtPrice = txtPrice;
-    this.txtSpecifications = txtSpecifications;
-=======
-  private final LinearLayout rootView;
-
-  @NonNull
-  public final LinearLayout featuresContainer;
-
-  @NonNull
-  public final TextView productCategory;
-
-  @NonNull
-  public final TextView productDescription;
-
-  @NonNull
-  public final TextView productName;
-
-  @NonNull
-  public final TextView productPrice;
-
-  @NonNull
-  public final LinearLayout specificationsContainer;
-
-  @NonNull
-  public final Toolbar toolbar;
-
-  private ActivityProductDetailsBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout featuresContainer, @NonNull TextView productCategory,
-      @NonNull TextView productDescription, @NonNull TextView productName,
-      @NonNull TextView productPrice, @NonNull LinearLayout specificationsContainer,
-      @NonNull Toolbar toolbar) {
-    this.rootView = rootView;
-    this.featuresContainer = featuresContainer;
-    this.productCategory = productCategory;
-    this.productDescription = productDescription;
-    this.productName = productName;
-    this.productPrice = productPrice;
-    this.specificationsContainer = specificationsContainer;
-    this.toolbar = toolbar;
->>>>>>> 092c94a (Primeiro commit do projeto)
   }
 
   @Override
   @NonNull
-<<<<<<< HEAD
-  public ScrollView getRoot() {
-=======
   public LinearLayout getRoot() {
->>>>>>> 092c94a (Primeiro commit do projeto)
     return rootView;
   }
 
@@ -133,10 +83,15 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-<<<<<<< HEAD
-      id = R.id.btn_back;
-      Button btnBack = ViewBindings.findChildViewById(rootView, id);
-      if (btnBack == null) {
+      id = R.id.btn_back_details;
+      Button btnBackDetails = ViewBindings.findChildViewById(rootView, id);
+      if (btnBackDetails == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
         break missingId;
       }
 
@@ -152,9 +107,9 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txt_features;
-      TextView txtFeatures = ViewBindings.findChildViewById(rootView, id);
-      if (txtFeatures == null) {
+      id = R.id.txt_details;
+      TextView txtDetails = ViewBindings.findChildViewById(rootView, id);
+      if (txtDetails == null) {
         break missingId;
       }
 
@@ -170,61 +125,8 @@ public final class ActivityProductDetailsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txt_specifications;
-      TextView txtSpecifications = ViewBindings.findChildViewById(rootView, id);
-      if (txtSpecifications == null) {
-        break missingId;
-      }
-
-      return new ActivityProductDetailsBinding((ScrollView) rootView, btnBack, txtCategory,
-          txtDescription, txtFeatures, txtName, txtPrice, txtSpecifications);
-=======
-      id = R.id.features_container;
-      LinearLayout featuresContainer = ViewBindings.findChildViewById(rootView, id);
-      if (featuresContainer == null) {
-        break missingId;
-      }
-
-      id = R.id.product_category;
-      TextView productCategory = ViewBindings.findChildViewById(rootView, id);
-      if (productCategory == null) {
-        break missingId;
-      }
-
-      id = R.id.product_description;
-      TextView productDescription = ViewBindings.findChildViewById(rootView, id);
-      if (productDescription == null) {
-        break missingId;
-      }
-
-      id = R.id.product_name;
-      TextView productName = ViewBindings.findChildViewById(rootView, id);
-      if (productName == null) {
-        break missingId;
-      }
-
-      id = R.id.product_price;
-      TextView productPrice = ViewBindings.findChildViewById(rootView, id);
-      if (productPrice == null) {
-        break missingId;
-      }
-
-      id = R.id.specifications_container;
-      LinearLayout specificationsContainer = ViewBindings.findChildViewById(rootView, id);
-      if (specificationsContainer == null) {
-        break missingId;
-      }
-
-      id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
-        break missingId;
-      }
-
-      return new ActivityProductDetailsBinding((LinearLayout) rootView, featuresContainer,
-          productCategory, productDescription, productName, productPrice, specificationsContainer,
-          toolbar);
->>>>>>> 092c94a (Primeiro commit do projeto)
+      return new ActivityProductDetailsBinding((LinearLayout) rootView, btnBackDetails, toolbar,
+          txtCategory, txtDescription, txtDetails, txtName, txtPrice);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
